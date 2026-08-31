@@ -1,0 +1,22 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.17.0
+2 info using node@v24.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/neeleshkamath/Neelesh Projects AI/Freelance Invoice Generators/.npmrc
+5 silly config load:file:/Users/neeleshkamath/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install next@latest react@latest react-dom@latest typescript @types/react @types/react-dom @types/node @supabase/supabase-js @supabase/ssr @react-pdf/renderer react-hot-toast
+8 verbose argv "install" "next@latest" "react@latest" "react-dom@latest" "typescript" "@types/react" "@types/react-dom" "@types/node" "@supabase/supabase-js" "@supabase/ssr" "@react-pdf/renderer" "react-hot-toast"
+9 verbose logfile logs-max:10 dir:/Users/neeleshkamath/Neelesh Projects AI/Freelance Invoice Generators/.npm-cache/_logs/2026-08-31T05_49_43_082Z-
+10 verbose logfile /Users/neeleshkamath/Neelesh Projects AI/Freelance Invoice Generators/.npm-cache/_logs/2026-08-31T05_49_43_082Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+14 silly packumentCache corgi:https://registry.npmjs.org/react cache-miss
+15 silly packumentCache corgi:https://registry.npmjs.org/react-dom cache-miss
+16 http fetch GET https://registry.npmjs.org/next attempt 1 failed with ENOTFOUND
+17 http fetch GET https://registry.npmjs.org/react attempt 1 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/react-dom attempt 1 failed with ENOTFOUND
+19 http fetch GET https://registry.npmjs.org/next attempt 2 failed with ENOTFOUND
+20 http fetch GET https://registry.npmjs.org/react attempt 2 failed with ENOTFOUND
+21 http fetch GET https://registry.npmjs.org/react-dom attempt 2 failed with ENOTFOUND

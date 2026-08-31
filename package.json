@@ -1,0 +1,26 @@
+{
+  "name": "invoiceflow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "echo 'import fontkit from \"./main.cjs\";\\nexport default fontkit;' > node_modules/fontkit/dist/module.mjs && echo 'import pdfkit from \"./pdfkit.js\";\\nexport default pdfkit;' > node_modules/pdfkit/js/pdfkit.node.mjs || true"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.9.0",
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "fontkit": "^2.0.4",
+    "next": "^16.3.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-hot-toast": "^2.6.0",
+    "typescript": "^7.0.2"
+  }
+}
