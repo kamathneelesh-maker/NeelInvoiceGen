@@ -69,7 +69,7 @@ export async function GET(
     const clientName = invoice.client?.name?.replace(/\s+/g, '-') || 'Invoice';
     const filename = `${invoice.invoice_number}-${clientName}.pdf`;
 
-    return new NextResponse(pdfBuffer, {
+    return new NextResponse(pdfBuffer as any, {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',

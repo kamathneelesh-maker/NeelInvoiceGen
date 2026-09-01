@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
       require('fs').writeFileSync('/Users/neeleshkamath/Neelesh Projects AI/Freelance Invoice Generators/pdf_debug.log', `Buffer size: ${pdfBuffer.length} bytes`);
     } catch (e) {}
 
-    return new NextResponse(pdfBuffer, {
+    return new NextResponse(pdfBuffer as any, {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
