@@ -8,6 +8,7 @@ const nextConfig = {
     config.resolve.alias.fontkit = false;
     return config;
   },
+  turbopack: {},
 };
 
 module.exports = nextConfig;
