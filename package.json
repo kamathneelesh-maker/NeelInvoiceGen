@@ -7,7 +7,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "echo 'import fontkit from \"./main.cjs\";\\nexport default fontkit;' > node_modules/fontkit/dist/module.mjs && echo 'import pdfkit from \"./pdfkit.js\";\\nexport default pdfkit;' > node_modules/pdfkit/js/pdfkit.node.mjs || true"
+    "postinstall": "node -e \"const fs = require('fs'); try { fs.writeFileSync('node_modules/fontkit/dist/module.mjs', 'import fontkit from \\'./main.cjs\\';\\nexport default fontkit;'); fs.writeFileSync('node_modules/pdfkit/js/pdfkit.node.mjs', 'import pdfkit from \\'./pdfkit.js\\';\\nexport default pdfkit;'); } catch (e) {}\""
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.9.0",
