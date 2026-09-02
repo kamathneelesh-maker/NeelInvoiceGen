@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
@@ -15,7 +15,7 @@ const emptyItem: InvoiceItemFormData = {
   unit_price: 0,
 };
 
-export default function CreateInvoicePage() {
+function CreateInvoiceContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { profile } = useLayout();
@@ -586,5 +586,22 @@ export default function CreateInvoicePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function CreateInvoicePage() {
+  return (
+    <Suspense fallback={
+      <div>
+        <div className="section-header">
+          <div>
+            <h2 className="section-title">Create Invoice</h2>
+            <p className="section-subtitle">Loading...</p>
+          </div>
+        </div>
+      </div>
+    }>
+      <CreateInvoiceContent />
+    </Suspense>
   );
 }
